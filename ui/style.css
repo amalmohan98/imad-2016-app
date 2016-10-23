@@ -1,34 +1,4 @@
 body {
-    font-family: sans-serif;
-    background-color: green;
-    margin-top: 75px;
-}
-
-.center {
-    text-align: center;
-}
-
-.text-big {
-    font-size: 300% ;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.img-medium {
-    height: 300px;
-    }
-    
-    .container {
-        max-width:800px;
-        margin: 0 auto;
-        color: #4a4a4a;
-        font-family: sans-serif;
-        padding-top: 70px;
-        padding-left: 30px;
-        padding-right: 30px;
-        }
 .Wrapper {
  background:url(http://www.interiorplace.com/product_images/z/214/SA9193L__37829.jpg) repeat;
   background-size:cover;
