@@ -29,3 +29,426 @@ body {
         padding-left: 30px;
         padding-right: 30px;
         }
+        body {
+  background-color:#030400
+}
+
+.Wrapper {
+ background:url(http://www.interiorplace.com/product_images/z/214/SA9193L__37829.jpg) repeat;
+  background-size:cover;
+  width:500px;
+  margin:0 auto;
+  position:relative;
+  border:5px solid rgba(0.0.0.0.1);
+  perspective:500px;
+  overflow:hidden;
+  text-align:center;
+  height:100vh;
+  min-height:700px;
+  max-height:900px
+}
+
+/* =======
+Table
+==========*/
+.Table {
+  width:320px;
+  height:100px;
+  background:url(http://www.designbolts.com/wp-content/uploads/2013/02/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg) no-repeat;
+  background-size:cover;
+  position:absolute;
+  bottom:155px;
+  left:90px;
+  transform:rotateX(75deg);
+  border-bottom:15px solid #896B44;
+  box-shadow:0 7px 5px -5px #AE8340 ,40px 0 45px -25px #AE8340 inset ,-40px 0 45px -25px #AE8340 inset;
+  border-radius:60px;
+  z-index:5
+}
+.box {
+  width:300px;
+  height:100px;
+ background:url(http://www.designbolts.com/wp-content/uploads/2013/02/Free-Seamless-Wood-Textures-Patterns-For-3D-Mapping-2.jpg) no-repeat;
+  background-size:cover;
+  position:absolute;
+  left:100px;
+  box-shadow:0 8px 7px -6px #53380A ,0px 12px 0 #876C42 ,-20px 0 60px #A67A35 inset ,20px 0 60px #A67A35 inset,0 30px 50px #FFFDDD inset ,2px 5px 11px #684714;
+  z-index:1;
+  text-align:center
+}
+.box1 {
+  bottom:92px
+}
+.box2 {
+  bottom:-15px
+}
+.box span {
+  width:20px;
+  height:20px;
+  background:#826336;
+  position:absolute;
+  border-radius:100%;
+  margin:35px 0 0;
+  box-shadow:0 0 0 2px #A68440 ,0 0 0 5px #E3BF74 ,4px 3px 4px 2px #6A4E1C ,-4px -3px 4px 2px #6A4E1C inset ,-10px -7px 1px 9px #B6904F inset
+}
+
+/* =======
+Tank
+==========*/
+.Tank {
+  background-color:rgba(255,255,255,0.2);
+  width:200px;
+  height:180px;
+  border-radius:100%;
+  position:absolute;
+  bottom:210px;
+  overflow:hidden;
+  left:150px;
+  -webkit-filter:blur(200);
+  z-index:5;
+  box-shadow:5px 5px #409ab4 ,-5px 5px #409AB4 ,-10px -22px #82F0FF inset ,-10px -72px #FFF inset,0 -79px 0 -5px #91C0CE inset
+}
+.stakc {
+  width:120px;
+  height:30px;
+  position:absolute;
+  box-shadow:1px 1px 1px 4px #FFF ,0 0 0 5px #409ab4;
+  border-radius:100%;
+  left:190px;
+  z-index:10;
+  bottom:360px
+}
+.Water {
+  background:radial-gradient(#8ad7ed 20%,#54b7d3 70%);
+  width:102%;
+  height:150px;
+  border-radius:1000% 1000% 3000px 3000px;
+  margin-top:30px;
+  margin-left:-3px;
+  position:absolute;
+  opacity:.8
+}
+.Water:before {
+  content:'';
+  position:absolute;
+  width:80%;
+  height:40px;
+  background:rgba(255,255,255,0.5);
+  left:20px;
+  top:-5px;
+  border-radius:100%;
+  margin:px 0 0;
+  z-index:9;
+  animation:1s WaterLight Linear ALTERNATE infinite
+}
+@keyframes WaterLight {
+  100% {
+    transform:rotateX(50deg)
+  }
+}
+
+/* Bubbles */
+.bubbles {
+  width:100%;
+  height:100%;
+  position:relative;
+  overflow:hidden
+}
+
+.bubbles {
+  z-index:10
+}
+
+.bubbles span {
+  border-radius:100%;
+  position:absolute;
+  display:block
+}
+
+.bubbles span:nth-child(1) {
+  border:2px solid #fff;
+  width:1px;
+  height:1px;
+  left:50px;
+  top:50px;
+  animation:2s bubbles linear infinite
+}
+
+.bubbles span:nth-child(2) {
+  border:3px solid #fff;
+  width:2px;
+  height:2px;
+  left:50px;
+  top:110px;
+  animation:3s bubbles linear infinite
+}
+
+.bubbles span:nth-child(3) {
+  border:2px solid #fff;
+  width:3px;
+  height:3px;
+  left:120px;
+  top:90px;
+  animation:1s bubbles linear infinite alternate
+}
+
+.bubbles span:nth-child(4) {
+  border:1px solid #fff;
+  width:2px;
+  height:3px;
+  left:150px;
+  top:120px;
+  animation:.5s bubbles linear infinite alternate
+}
+
+.bubbles span:nth-child(5) {
+  border:1px solid #fff;
+  width:2px;
+  height:3px;
+  left:150px;
+  top:90px;
+  animation:5s bubbles linear infinite
+}
+
+/* Bubbles Noise*/
+.bubbles p {
+  width:2px;
+  height:2px;
+  background-color:#fff;
+  border-radius:100%;
+  position:absolute;
+  opacity:.5
+}
+
+.bubbles p:nth-of-type(1) {
+  top:90px;
+  right:20px;
+  animation:2s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(2) {
+  top:100px;
+  right:40px;
+  animation:3s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(3) {
+  top:100px;
+  right:90px;
+  animation:4s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(4) {
+  top:70px;
+  right:130px;
+  animation:5s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(5) {
+  top:90px;
+  right:180px;
+  animation:1s bubbles linear infinite alternate
+}
+
+.bubbles p:nth-of-type(6) {
+  top:150px;
+  right:150px;
+  animation:3s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(7) {
+  top:140px;
+  right:92px;
+  animation:2s bubbles linear infinite
+}
+
+.bubbles p:nth-of-type(8) {
+  top:130px;
+  right:122px;
+  animation:2s bubbles linear infinite
+}
+
+@keyframes bubbles {
+30% {
+  margin-left:-20px
+}
+
+60% {
+  margin-left:0
+}
+
+100% {
+  margin-left:20px;
+  top:20px;
+  opacity:0
+}
+}
+
+/* =======
+Fish
+==========*/
+.Fish {
+  width:40%;
+  height:40px;
+  position:relative;
+  bottom:80px;
+  left:150px;
+  border-radius:100%;
+  animation:7s Fish linear infinite
+}
+
+@keyframes Fish {
+  10% {
+    transform:scale(1.3);
+    left:50px
+  }
+  40% {
+    transform:rotateY(180deg) scale(1);
+    left:-120px
+  }
+  50% {
+    transform:rotateY(180deg) scale(0.7);
+    left:0;
+    bottom:100px
+  }
+  70% {
+    left:200px
+  }
+  97% {
+    transform:scale(1) rotateY(180deg);
+    left:250px
+  }
+  98%,99% {
+    transform:scale(1) rotateY(0deg)
+  }
+  100% {
+    left:150px
+  }
+}
+
+.F-body {
+  background:#e7d642;
+  width:100%;
+  height:40px;
+  position:absolute;
+  border-radius:100%;
+  z-index:5
+}
+
+.F-body span {
+  background:#a1a35f;
+  width:20px;
+  height:20px;
+  position:absolute;
+  border-radius:100% 0 100% 100%;
+  left:60px;
+  transform:rotate(40deg);
+  top:10px;
+  box-shadow:-5px 4px 0 5px #e7d642 ,-11px 10px 0 7px #a1a35f ,-17px 15px 0 9px #e7d642 ,-28px 23px 0 9px #a1a35f
+}
+
+.F-sheem p {
+  background:#a1a35f;
+  position:absolute
+}
+
+.F-sheem p:nth-of-type(1) {
+  width:60%;
+  height:10px;
+  left:20px;
+  top:-5px;
+  border-radius:50%
+}
+
+.F-sheem p:nth-of-type(2) {
+  width:40%;
+  height:20px;
+  left:30px;
+  top:25px;
+  border-radius:50%
+}
+
+.F-mouse span {
+  background:#e7d642;
+  width:20px;
+  height:10px;
+  position:absolute;
+  border-radius:100%
+}
+
+.F-mouse span:first-of-type {
+  left:-5px;
+  top:13px;
+  transform:rotate(20deg)
+}
+
+.F-mouse span:nth-of-type(2) {
+  left:-3px;
+  top:17px;
+  transform:rotate(-8deg)
+}
+
+.F-eye {
+  width:20px;
+  height:18px;
+  background-color:#fff;
+  border-radius:100%;
+  position:absolute;
+  margin:10px 5px;
+  z-index:6;
+  border:2px solid #E8DB5E;
+  box-shadow:0 0 5px #4D4E1F inset
+}
+
+.F-ball {
+  width:10px;
+  height:10px;
+  background-color:#000;
+  border-radius:100%;
+  margin:3px
+}
+
+.F-ball:after {
+  content:"";
+  width:5px;
+  height:5px;
+  background-color:#fff;
+  position:absolute;
+  border-radius:100%;
+  margin:1px 0;
+  animation:1s EyeBall ease-in-out infinite alternate
+}
+
+@keyframes EyeBall {
+  100% { margin:0 4px }
+}
+
+.F-tail {
+  width:20px;
+  height:20px;
+  background-color:#e7d642;
+  position:absolute;
+  border-radius:0 10% 100% 10%;
+  transform:rotate(-50deg);
+  margin:7px 85px;
+  z-index:1;
+  margin:7px 93px;
+  z-index:1;
+  box-shadow:0 0 0 5px #e7d642 ,0 -4px #a1a35f inset;
+  animation:.3s tail ease-in-out infinite alternate
+}
+
+@keyframes tail {
+  100% {
+    width:10px;
+    height:20px;
+    margin:10px 90px
+  }
+}
+
+
+
+/* =========
+Copyrights
+============*/
+.copyrights *{transition:.1s ease-in-out}.copyrights a{font-family:monospace;font-weight:700;font-size:20px;background-color:#000;color:#fff;width:30px;height:30px;float:left;box-sizing:border-box;padding:6px 10px;border-radius:100%;margin-right:7px;opacity:.1}.copyrights a:hover{opacity:.2}.copyrights a:hover ~ p{opacity:.2;width:180px}.copyrights p{background-color:#000;float:left;color:#fff;padding:5px 15px;border-radius:3px;font-family:serif;font-size:14px;opacity:0;margin-top:2px;width:0;overflow:hidden;height:15px}.copyrights{margin:20px}.copyrights p:before{content:"";border-top:7px solid transparent;border-bottom:7px solid transparent;border-right:7px solid #000;position:absolute;margin:0 -21px}.copyrights a{color:#fff;text-decoration:none}
