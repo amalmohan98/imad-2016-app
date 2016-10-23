@@ -1,12 +1,22 @@
-<html>
- header
-  h1.small Material Design
-  h2 Grid Animation
-div(ng-app='app',
-    ng-controller='ctrl as c')
-  a.btn(ng-click='c.shown = !c.shown') {{c.shown ? 'Hide' : 'Show'}} Items
-  a.btn.sm.minus(ng-class="{ show: c.shown, disabled: c.items.length === 0 }" ng-click='c.sub()')
-  a.btn.sm.plus(ng-class="{ show: c.shown, disabled: c.items.length >= 30 }" ng-click='c.add()')
-  grid(ng-class="{ show: c.shown }")
-    item(ng-repeat='item in c.items') {{$index + 1}}
-</html>
+  <link href="/ui/style.css" rel="stylesheet"/>
+       </head>
+         <link href="/ui/style.css" rel="stylesheet"/>
+       </head>
+       <body>
+          <div class="centerr">
+              <img src="/ui/madi.png" class="img-medium"/>
+	</div>
+	<br>
+	<div class="center text-big bold">
+	    Hi! I am Amal, and this is my first webapp.
+	    <h4> HEY! </h4>
+	    I've made some changes
+	</div>
+	<script>
+	    alert('Hi, welcome to my site!');
+	</script>
+            <sript type="text/javascript" src="/ui/main.js">
+            </sript>
+	</body>
+	<head>
+    
