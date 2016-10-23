@@ -1,107 +1,120 @@
-
-@mixin size($size) {
-    width: $size;
-  height: $size;
+@import url(http://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  background: #009688;
 }
 
-@mixin abs-pos {
+.ripple-wrap {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  font-size: 0;
+  z-index: 1000;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+@-webkit-keyframes RIPPLER {
+  0%   { border-width: 0; }
+  40% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  
+  41% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  100% {
+    border-width: 1500px;
+    height: 2000px;
+    width: 2000px;
+    margin-top: -2500px;
+    margin-left:-2500px;
+    border-color: #009688;
+  }
+}
+@keyframes RIPPLER {
+  0%   { border-width: 0; }
+  40% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  41% { 
+    height: 0;
+    width: 0;
+    border-width: 1500px;
+    margin-top: -1500px;
+    margin-left:-1500px; 
+    border-color: #009688;
+  }
+  100% {
+    border-width: 1500px;
+    height: 2000px;
+    width: 2000px;
+    margin-top: -2500px;
+    margin-left:-2500px;
+    border-color: #009688;
+  }
+}
+.ripple {
   display: block;
+  height: 0;
+  width: 0;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #00796b;
+  border-radius: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 300px;
+  left: 300px;
+  -webkit-animation: none;
+  animation: none;
+}
+.ripple-wrap.goripple {
+  display: block;
+}
+.ripple-wrap.goripple .ripple {
+ -webkit-animation-name: RIPPLER;
+ -webkit-animation-duration: 1.5s;
+ -webkit-animation-fill-mode: forwards;
+ animation-name: RIPPLER;
+ animation-duration: 1.5s;
+ animation-fill-mode: forwards;
+
 }
 
-html {
-  box-sizing: border-box;
-}
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
 
-html,
-body,
-canvas {
-  @include size(100%);
-}
+/* This bit is just to look pretty. Not relevant to the implementation */
 
 body {
-  @include size(100%);
-  background-color: #222;
-  background-image: url('https://drive.google.com/uc?export=view&id=0BzFF7FmbJUo5X0NEUXFVd0NBcWc');
-  background-size: cover;
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 0;
-  &:after {
-    content: '';
-    @include size(100%);
-    @include abs-pos;
-    background-color: rgba(0, 0, 0, 0.1);
-    z-index: 1;
-    animation: thunder-bg 6s infinite;
-  }
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  color: #D7EEEC;
+}
+a {
+  color: #004d40;
+  font-weight: bold;
 }
 
-canvas {
-  @include abs-pos;
+.wrap {
+  margin: 48px auto;
+  max-width: 580px;
+  text-align: justify;
+}
+h1, h2 {
+  font-weight: lighter;
 }
 
-#canvas3 {
-  z-index: 5;
-}
 
-#canvas2 {
-  z-index: 10;
-}
-
-#canvas1 {
-  z-index: 100;
-}
-
-$color1: rgba(34,
-34,
-34,
-.9);
-$color2: rgba(59,
-59,
-59,
-.3);
-.thunder {
-  @at-root {
-    @-webkit-keyframes thunder-bg {
-      0% {
-        background-color: $color1;
-      }
-      9% {
-        background-color: $color1;
-      }
-      10% {
-        background-color: $color2;
-      }
-      10.5% {
-        background-color: $color1;
-      }
-      80% {
-        background-color: $color1;
-      }
-      82% {
-        background-color: $color2;
-      }
-      83% {
-        background-color: $color1;
-      }
-      83.5% {
-        background-color: $color2;
-      }
-      100% {
-        background-color: $color1;
-      }
-    }
-  }
-}
